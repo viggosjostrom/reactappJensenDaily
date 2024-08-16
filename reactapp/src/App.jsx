@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css' // Import the CSS file
+import './App.css';
 import Main from './main';
 
 function App() {
@@ -17,21 +17,12 @@ function App() {
     setCount(count + 1);
   };
 
-  const App = () => {
-    return (
-        <div>
-            <Main />
-        </div>
-    );
-};
-
   return (
     <div className='container'>
+      {/* Display the message from the backend */}
       <h1>{message}</h1>
-      <div className= "counter">
-      <p> You clicked {count} times</p>
-      <button onClick={incrementCounter}>Click me</button>
-      </div>
+      {/* Render Main component which includes the ArticleList */}
+      <Main />
     </div>
   );
 }
