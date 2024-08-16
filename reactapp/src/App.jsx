@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div className='container'>
-      {/* Display the message from the backend */}
       <h1>{message}</h1>
       {/* Render Main component which includes the ArticleList */}
       <Main />

@@ -17,7 +17,7 @@ const Main = () => {
     return (
         <div>
             <h1>Welcome to the News App</h1>
-            <ArticleList />
+            <ArticleList/>
         </div>
     );
 };
