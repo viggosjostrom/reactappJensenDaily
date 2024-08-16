@@ -142,7 +142,7 @@ body {
 }
 
 body {
-  background-image: url('background.jpg');
+  background-image: url('css/background.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
