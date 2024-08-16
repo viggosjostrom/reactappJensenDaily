@@ -1,13 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+<head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
+    <title>The Jensens Daily</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/JensensWebApp.styles.css" />
+    <link rel="stylesheet" href="src/css/site.cs" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="header-container">
+                <div class="navbar-brand-wrapper">
+                    <a href="/" class="navbar-brand">The Jensens Daily</a>
+                    <div class="dropdown">
+                        <button class="dropdown-button">
+                            <span class="hamburger-icon"></span>
+                            <span class="hamburger-icon"></span>
+                            <span class="hamburger-icon"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="/">Home</a></li>
+                            <li class="dropdown-item"><a href="/Home/Contact">Contact</a></li>
+                            <li class="dropdown-item"><a href="/Home/Subscription">Subscription</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button id="dark-mode-button" class="btn btn-secondary">Dark Mode</button>
+            </div>
+        </nav>
+
+        <div class="topic-menu">
+            <ul class="topic-list"></ul>
+        </div>
+    </header>
+
+    <div class="body-container">
+        <main role="main" class="pb-3">
+            <!-- React will render here -->
+            <div id="root"></div>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - JensensWebApp - <a href="/Home/Contact">Contact</a>
+        </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="/js/contact.js"></script>
+    <!-- Include the bundled JavaScript file for React -->
+    <script src="/js/bundle.js"></script>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+</body>
+
 </html>
