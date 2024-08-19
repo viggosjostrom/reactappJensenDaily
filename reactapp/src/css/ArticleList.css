@@ -1,0 +1,68 @@
+/* Grundinställningar för artikelbehållaren */
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Fyra kolumner */
+    gap: 20px; /* Avstånd mellan artiklarna */
+    padding: 20px;
+}
+
+.article-item {
+    background-color: #f9f9f9; /* Lätt bakgrundsfärg för kontrast */
+    padding: 20px;
+    border-radius: 10px; /* Mjuka hörn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lätt skugga för djup */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Övergångseffekter */
+}
+
+.article-item:hover {
+    transform: translateY(-5px); /* Lyft artikeln vid hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Förstärk skuggan vid hover */
+}
+
+.article-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.article-summary {
+    font-size: 1rem;
+    color: #8b8b8b;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.article-link {
+    display: inline-block;
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.article-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Gör rutnätet responsivt */
+@media (max-width: 1200px) {
+    .article-container {
+        grid-template-columns: repeat(3, 1fr); /* Tre kolumner för mellanstora skärmar */
+    }
+}
+
+@media (max-width: 900px) {
+    .article-container {
+        grid-template-columns: repeat(2, 1fr); /* Två kolumner för mindre skärmar */
+    }
+}
+
+@media (max-width: 600px) {
+    .article-container {
+        grid-template-columns: 1fr; /* En kolumn för mobila enheter */
+    }
+}

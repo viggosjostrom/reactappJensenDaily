@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './css/ArticleList.css'; // Importera CSS-filen
 
 const ArticleList = () => {
     const [articles, setArticles] = useState([]);
@@ -11,17 +12,14 @@ const ArticleList = () => {
     }, []);
 
     return (
-        <div>
-            <h2>Articles</h2>
-            <ul>
-                {articles.map(article => (
-                    <li key={article.title}>
-                        <h3>{article.title}</h3>
-                        <p>{article.summary}</p>
-                        <a href={article.link}>Read more</a>
-                    </li>
-                ))}
-            </ul>
+        <div className="article-container">
+            {articles.map(article => (
+                <div key={article.title} className="article-item">
+                    <h3 className="article-title">{article.title}</h3>
+                    <p className="article-summary">{article.summary}</p>
+                    <a href={article.link} className="article-link">Read more</a>
+                </div>
+            ))}
         </div>
     );
 };

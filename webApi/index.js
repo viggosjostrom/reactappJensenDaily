@@ -36,36 +36,36 @@ const express = require('express');
         topic: ["Miljo"] 
     },
     {
-        title: "Ny teknik kan revolutionera solenergi", 
-        summary: "▸ Forskare har utvecklat en ny teknik som kan öka effektiviteten hos solceller och minska kostnaderna för solenergi.", 
-        link: "https://www.example.com/ny-teknik-solenergi", 
+        title: "Så ska Googles nya ai-teknik för Android knäcka Chat GPT", 
+        summary: "▸ Googles senaste lanseringsjippo bjöd inte bara på ett gäng nya produkter. Det visade också hur sökjätten tänker sig att röststyrd ai och stora språkmodeller ska förändra hur smarta prylar används.", 
+        link: "https://www.nyteknik.se/tech/sa-ska-googles-nya-ai-teknik-for-android-knacka-chat-gpt/4281055", 
         published: new Date(Date.now() - 86400000), // 1 dag gammal
         topic: ["Teknik"] 
     },
     {
-        title: "Ekonomiska utsikter för 2024", 
-        summary: "▸ Ekonomer analyserar de förväntade ekonomiska trenderna för det kommande året och vad de betyder för hushåll och företag.", 
-        link: "https://www.example.com/ekonomiska-utsikter-2024", 
+        title: "Kivra ligger nere – går inte att logga in", 
+        summary: "▸ Den digitala brevlådetjänsten Kivra ligger nere. Enligt Kivra beror felet på driftstörningar som gör att det går inte att logga in. Just nu har vi ingen prognos när det kan vara löst, säger Kivras kommunikationschef Henrik Höglin.", 
+        link: "https://www.svt.se/nyheter/ekonomi/kivra-ligger-nere", 
         published: new Date(Date.now() - 604800000), // 7 dagar gammal
         topic: ["Ekonomi"] 
     },
     {
-        title: "Stormens påverkan på den lokala infrastrukturen", 
-        summary: "▸ Den senaste stormen har orsakat omfattande skador på vägar och elnät i flera delar av landet.", 
-        link: "https://www.example.com/stormens-paverkan-infrastruktur", 
+        title: "Värme och sol i veckan – men då kommer stora bakslaget", 
+        summary: "▸ Värmen och solen biter sig kvar i början på nästa vecka. Men passa på att njuta – för sen vänder det. Temperaturen väntas bli 24 grader och lokalt kanske 25 grader, säger TV4:s meteorolog Antonio Fuentes Moreno.", 
+        link: "https://www.tv4.se/artikel/3ffaK0qh9WTOLJVUXP7WYV/vaerme-och-sol-under-naesta-vecka-men-da-kommer-stora-bakslaget", 
         published: new Date(Date.now() - 2592000000), // 30 dagar gammal
         topic: ["Vader"] 
     },
     {
-        title: "Innovativa lösningar för att bekämpa plastavfall", 
-        summary: "▸ Forskarna presenterar nya metoder för att minska och återvinna plastavfall i hav och på land.", 
-        link: "https://www.example.com/bekampa-plastavfall", 
+        title: "Efter sopkritiken i skärgården – Norrtäljes återvinningsfärja tillbaka", 
+        summary: "▸ På sommaren ökar antalet besökare i skärgården och i samband med det även mängden sopor. Efter kritik från skärgårdsborna återinför nu Norrtälje kommun återvinningsfärjan.", 
+        link: "https://www.svt.se/nyheter/lokalt/stockholm/efter-sopkritiken-i-skargarden-norrtaljes-atervinningsfarja-tillbaka", 
         published: new Date(Date.now() - 1296000000), // 15 dagar gammal
         topic: ["Miljo"] 
     },
     {
-        title: "Kulturevenemang för sommaren 2024", 
-        summary: "▸ En översikt över de mest efterlängtade kulturevenemangen och festivalerna som planeras för nästa sommar.", 
+        title: "Tiotusentals technoälskare samlades i parad", 
+        summary: "▸ Under lördagen dansade tiotusentals besökare i Berlin under mottot ”Love is stronger”. Arrangörerna Rave the planet jobbar för att säkra technomusikens kulturella status.", 
         link: "https://www.example.com/kulturevenemang-sommaren-2024", 
         published: new Date(Date.now() - 4320000000), // 50 dagar gammal
         topic: ["Kultur"] 
