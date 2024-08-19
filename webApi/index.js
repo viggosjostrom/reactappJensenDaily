@@ -66,19 +66,19 @@ const express = require('express');
     {
         title: "Tiotusentals technoälskare samlades i parad", 
         summary: "▸ Under lördagen dansade tiotusentals besökare i Berlin under mottot ”Love is stronger”. Arrangörerna Rave the planet jobbar för att säkra technomusikens kulturella status.", 
-        link: "https://www.example.com/kulturevenemang-sommaren-2024", 
+        link: "https://www.svt.se/kultur/tiotusentals-technoalskare-samlades-i-parad", 
         published: new Date(Date.now()),
         topic: ["Kultur"] 
     },
     { 
         title: "Tre konflikter i världen som hamnat i medieskugga", 
-        summary: "▸ Syrien, Bangladesh, Etiopien, Sydsudan, Kongo och Jemen. Runt om i världen pågår flera långdragna väpnade konflikter och kriser. Vi förlorar dem i mediebilden och de blir bortglömda, men det betyder ju inte att det inte finns miljoner människor som är i behov av skydd och hjälp, säger Elisabeth Arnsdorf Haslund på UNHCR Norden.", 
+        summary: "▸ Syrien, Bangladesh, Etiopien, Sydsudan, Kongo och Jemen. Runt om i världen pågår flera långdragna väpnade konflikter och kriser. Vi förlorar dem i mediebilden och de blir bortglömda, men det betyder ju inte att det inte finns miljoner människor som är i behov av skydd och hjälp.", 
         link: "https://www.svt.se/nyheter/utrikes/tre-konflikter-i-varlden-som-hamnat-i-medieskugga", 
         published: new Date(Date.now()),
         topic: ["SamhalleKonflikter"] 
     },
     { 
-        title: "Stefan Åsberg om demokraternas konvent: ”Harris första verkliga prövning”", 
+        title: "”Harris första verkliga prövning”", 
         summary: "▸ Kamala Harris tystnad i viktiga frågor retar stora väljargrupper och nu kräver tusentals egna partikamrater att hon blir konkret och tydlig med sin politiska vilja. Konventet blir Harris första verkliga prövning och hon måste ge besked i den känsliga frågan om relationen till Israel.", 
         link: "https://www.svt.se/nyheter/utrikes/stefan-asberg-om-demokraternas-konvent-harris-forsta-verkliga-provning", 
         published: new Date(Date.now()),
