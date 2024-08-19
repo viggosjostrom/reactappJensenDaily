@@ -39,36 +39,57 @@ const express = require('express');
         title: "Så ska Googles nya ai-teknik för Android knäcka Chat GPT", 
         summary: "▸ Googles senaste lanseringsjippo bjöd inte bara på ett gäng nya produkter. Det visade också hur sökjätten tänker sig att röststyrd ai och stora språkmodeller ska förändra hur smarta prylar används.", 
         link: "https://www.nyteknik.se/tech/sa-ska-googles-nya-ai-teknik-for-android-knacka-chat-gpt/4281055", 
-        published: new Date(Date.now() - 86400000), // 1 dag gammal
+        published: new Date(Date.now()),
         topic: ["Teknik"] 
     },
     {
         title: "Kivra ligger nere – går inte att logga in", 
         summary: "▸ Den digitala brevlådetjänsten Kivra ligger nere. Enligt Kivra beror felet på driftstörningar som gör att det går inte att logga in. Just nu har vi ingen prognos när det kan vara löst, säger Kivras kommunikationschef Henrik Höglin.", 
         link: "https://www.svt.se/nyheter/ekonomi/kivra-ligger-nere", 
-        published: new Date(Date.now() - 604800000), // 7 dagar gammal
+        published: new Date(Date.now()),
         topic: ["Ekonomi"] 
     },
     {
         title: "Värme och sol i veckan – men då kommer stora bakslaget", 
         summary: "▸ Värmen och solen biter sig kvar i början på nästa vecka. Men passa på att njuta – för sen vänder det. Temperaturen väntas bli 24 grader och lokalt kanske 25 grader, säger TV4:s meteorolog Antonio Fuentes Moreno.", 
         link: "https://www.tv4.se/artikel/3ffaK0qh9WTOLJVUXP7WYV/vaerme-och-sol-under-naesta-vecka-men-da-kommer-stora-bakslaget", 
-        published: new Date(Date.now() - 2592000000), // 30 dagar gammal
+        published: new Date(Date.now()),
         topic: ["Vader"] 
     },
     {
         title: "Efter sopkritiken i skärgården – Norrtäljes återvinningsfärja tillbaka", 
         summary: "▸ På sommaren ökar antalet besökare i skärgården och i samband med det även mängden sopor. Efter kritik från skärgårdsborna återinför nu Norrtälje kommun återvinningsfärjan.", 
         link: "https://www.svt.se/nyheter/lokalt/stockholm/efter-sopkritiken-i-skargarden-norrtaljes-atervinningsfarja-tillbaka", 
-        published: new Date(Date.now() - 1296000000), // 15 dagar gammal
+        published: new Date(Date.now()),
         topic: ["Miljo"] 
     },
     {
         title: "Tiotusentals technoälskare samlades i parad", 
         summary: "▸ Under lördagen dansade tiotusentals besökare i Berlin under mottot ”Love is stronger”. Arrangörerna Rave the planet jobbar för att säkra technomusikens kulturella status.", 
         link: "https://www.example.com/kulturevenemang-sommaren-2024", 
-        published: new Date(Date.now() - 4320000000), // 50 dagar gammal
+        published: new Date(Date.now()),
         topic: ["Kultur"] 
+    },
+    { 
+        title: "Tre konflikter i världen som hamnat i medieskugga", 
+        summary: "▸ Syrien, Bangladesh, Etiopien, Sydsudan, Kongo och Jemen. Runt om i världen pågår flera långdragna väpnade konflikter och kriser. Vi förlorar dem i mediebilden och de blir bortglömda, men det betyder ju inte att det inte finns miljoner människor som är i behov av skydd och hjälp, säger Elisabeth Arnsdorf Haslund på UNHCR Norden.", 
+        link: "https://www.svt.se/nyheter/utrikes/tre-konflikter-i-varlden-som-hamnat-i-medieskugga", 
+        published: new Date(Date.now()),
+        topic: ["SamhalleKonflikter"] 
+    },
+    { 
+        title: "Stefan Åsberg om demokraternas konvent: ”Harris första verkliga prövning”", 
+        summary: "▸ Kamala Harris tystnad i viktiga frågor retar stora väljargrupper och nu kräver tusentals egna partikamrater att hon blir konkret och tydlig med sin politiska vilja. Konventet blir Harris första verkliga prövning och hon måste ge besked i den känsliga frågan om relationen till Israel.", 
+        link: "https://www.svt.se/nyheter/utrikes/stefan-asberg-om-demokraternas-konvent-harris-forsta-verkliga-provning", 
+        published: new Date(Date.now()),
+        topic: ["Politik"] 
+    },
+    {
+    title: "Hotad kultur: Fria teatergrupper lägger ner", 
+    summary: "▸ Många fria teatergrupper i Sverige går på knäna. Flera har tvingats sluta. Utövarna själva tror att det får långtgående konsekvenser.", 
+    link: "https://www.gp.se/kultur-noje/noje-kultur/hotad-kultur-fria-teatergrupper-lagger-ner.cb8df382-4f53-54b6-b608-1c6d680288cd", 
+    published: new Date(Date.now()),
+    topic: ["Kultur"] 
     }
 ];
 
