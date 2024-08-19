@@ -1,9 +1,9 @@
 .topic-menu {
     width: 100%;
-    padding: 10px 0; /* Padding för att styra avståndet inuti */
-    margin-top: -150px; /* Justera detta för att flytta upp menyn */
+    padding: 20px 0; 
+    margin-top: -150px; 
     background-color: rgb(30, 30, 30);
-    position: relative; /* Om det behövs för layouten */
+    position: relative; 
 }
 
 .topic-list {
@@ -16,7 +16,7 @@
 }
 
 .topic-item {
-    margin: 0 15px; /* Mellanrum mellan topics */
+    margin: 0 10px; /* Mellanrum mellan topics */
 }
 
 .topic-link {
