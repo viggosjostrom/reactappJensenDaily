@@ -34,6 +34,41 @@ const express = require('express');
         link: "https://www.aftonbladet.se/nyheter/a/dwPPP1/tva-avlidna-hittade-i-bostad-i-sandviken", 
         published: new Date(Date.now()),
         topic: ["Miljo"] 
+    },
+    {
+        title: "Ny teknik kan revolutionera solenergi", 
+        summary: "▸ Forskare har utvecklat en ny teknik som kan öka effektiviteten hos solceller och minska kostnaderna för solenergi.", 
+        link: "https://www.example.com/ny-teknik-solenergi", 
+        published: new Date(Date.now() - 86400000), // 1 dag gammal
+        topic: ["Teknik"] 
+    },
+    {
+        title: "Ekonomiska utsikter för 2024", 
+        summary: "▸ Ekonomer analyserar de förväntade ekonomiska trenderna för det kommande året och vad de betyder för hushåll och företag.", 
+        link: "https://www.example.com/ekonomiska-utsikter-2024", 
+        published: new Date(Date.now() - 604800000), // 7 dagar gammal
+        topic: ["Ekonomi"] 
+    },
+    {
+        title: "Stormens påverkan på den lokala infrastrukturen", 
+        summary: "▸ Den senaste stormen har orsakat omfattande skador på vägar och elnät i flera delar av landet.", 
+        link: "https://www.example.com/stormens-paverkan-infrastruktur", 
+        published: new Date(Date.now() - 2592000000), // 30 dagar gammal
+        topic: ["Vader"] 
+    },
+    {
+        title: "Innovativa lösningar för att bekämpa plastavfall", 
+        summary: "▸ Forskarna presenterar nya metoder för att minska och återvinna plastavfall i hav och på land.", 
+        link: "https://www.example.com/bekampa-plastavfall", 
+        published: new Date(Date.now() - 1296000000), // 15 dagar gammal
+        topic: ["Miljo"] 
+    },
+    {
+        title: "Kulturevenemang för sommaren 2024", 
+        summary: "▸ En översikt över de mest efterlängtade kulturevenemangen och festivalerna som planeras för nästa sommar.", 
+        link: "https://www.example.com/kulturevenemang-sommaren-2024", 
+        published: new Date(Date.now() - 4320000000), // 50 dagar gammal
+        topic: ["Kultur"] 
     }
 ];
 

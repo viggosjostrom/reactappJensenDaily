@@ -1,3 +1,5 @@
+
+
 .site-header {
     background-color: rgb(30, 30, 30);
     position: fixed;
@@ -98,36 +100,6 @@
   .dropdown:hover .dropdown-menu {
     margin-top: 0px;
     display: block;
-  }
-  
-  .topic-menu {
-    width: 100%;
-    padding: 20px;
-  }
-  
-  .topic-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .topic-item {
-    margin: 0 10px;
-  }
-  
-  .topic-item a {
-    color: #888888;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 15px;
-    font-family: 'Josefin Sans';
-  }
-  
-  .topic-item a:hover {
-    text-decoration: underline;
   }
   
   footer {
