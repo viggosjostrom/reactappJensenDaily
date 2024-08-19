@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="bodyclass">
+        <div class="formclass">
+            <form>
+                <label for="name" id="nameLabel">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" id="emailLabel">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message" id="messageLabel">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <div class="button-container">
+                    <!-- Dropdown för att välja språk -->
+                    <select id="languageDropdown">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="it">Italiano</option>
+                        <option value="fr">Français</option>
+                        <option value="da">Dansk</option>
+                        <option value="sv">Svenska</option>
+                        <!-- Lägg till fler språk här om det behövs -->
+                    </select>
+                    
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="changelanguage.js"></script>
+
+</body>
+</html>

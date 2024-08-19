@@ -1,0 +1,101 @@
+.formclass form {
+    top: 60px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    max-height: 500px; /* Justera efter behov */
+    overflow-y: auto; /* Lägg till scroll om innehållet är för stort */
+    margin: 0 auto; /* Centrerar formuläret horisontellt */
+    position: relative; /* För att kunna positionera dropdown-meny relativt formuläret */
+}
+
+.formclass label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: left !important;
+}
+
+.formclass input[type="text"],
+.formclass input[type="email"],
+.formclass textarea {
+    width: calc(100% - 16px);
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formclass textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.formclass input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto;
+}
+
+.formclass input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Stil för dropdown-menyn */
+@keyframes rainbow {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+
+#languageDropdown {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    animation: rainbow 5s linear infinite; /* Applicera regnbågsanimationen */
+}
+
+#languageDropdown option {
+    background-color: #fff;
+    color: black;
+}
+
+/* Lägg till en wrapper runt submit-knappen och dropdown-menyn */
+.formclass .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.formclass .button-container #languageDropdown {
+    margin-right: auto; /* Flytta till vänster */
+}
+
+.formclass .button-container input[type="submit"] {
+    margin-left: auto; /* Flytta till höger */
+}
