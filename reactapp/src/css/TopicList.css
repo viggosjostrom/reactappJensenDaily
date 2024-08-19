@@ -28,6 +28,5 @@
 }
 
 .topic-link:hover {
-    color: #f0f0f0; /* Färg vid hover */
     text-decoration: underline;
 }

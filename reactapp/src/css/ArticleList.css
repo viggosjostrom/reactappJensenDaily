@@ -1,27 +1,34 @@
-/* Grundinställningar för artikelbehållaren */
+
+/* Artikelcontainer med bakgrundsfärg för dark mode */
+.dark-mode .article-container {
+    background-color: rgb(30, 30, 30);
+}
+
+/* Resten av din CSS för artikelcontainer och artikel-item */
 .article-container {
+    background-color: white;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Fyra kolumner */
-    gap: 20px; /* Avstånd mellan artiklarna */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
     padding: 20px;
 }
 
 .article-item {
-    background-color: #f9f9f9; /* Lätt bakgrundsfärg för kontrast */
     padding: 20px;
-    border-radius: 10px; /* Mjuka hörn */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lätt skugga för djup */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Övergångseffekter */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .article-item:hover {
-    transform: translateY(-5px); /* Lyft artikeln vid hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Förstärk skuggan vid hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
+/* Resten av din CSS för artikeltitel, sammanfattning och länk */
 .article-title {
     font-size: 1.5rem;
-    color: #333;
+    color: #434343;
     margin-bottom: 10px;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
@@ -29,7 +36,7 @@
 
 .article-summary {
     font-size: 1rem;
-    color: #8b8b8b;
+    color: #7f7f7f;
     margin-bottom: 15px;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
