@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import './css/TopicList.css'; // Import the CSS file
+import React from 'react';
+import './css/TopicList.css'; // Importera CSS-filen
 
-const TopicList = () => {
-    const [topics, setTopics] = useState([]);
+const TopicList = ({ onTopicSelect }) => {
+    const [topics, setTopics] = React.useState([]);
 
-    useEffect(() => {
+    React.useEffect(() => {
         fetch('http://localhost:3000/api/articles')
             .then(response => response.json())
             .then(data => {
@@ -17,12 +17,16 @@ const TopicList = () => {
             .catch(error => console.error('Error fetching articles:', error));
     }, []);
 
+    const handleTopicClick = (topic) => {
+        onTopicSelect(topic); // Skicka det valda ämnet uppåt
+    };
+
     return (
         <div className="topic-menu">
             <ul className="topic-list">
                 {topics.map(topic => (
                     <li key={topic} className="topic-item">
-                        <a href={`#${topic}`} className="topic-link">{topic}</a>
+                        <button onClick={() => handleTopicClick(topic)} className="topic-link">{topic}</button>
                     </li>
                 ))}
             </ul>

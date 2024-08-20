@@ -99,3 +99,7 @@
 .formclass .button-container input[type="submit"] {
     margin-left: auto; /* Flytta till höger */
 }
+#kalletitle {
+    margin-top: -15px;
+    margin-bottom: 50px;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './css/ArticleList.css'; // Importera CSS-filen
 
-const ArticleList = () => {
+const ArticleList = ({ selectedTopic }) => {
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
@@ -11,9 +11,13 @@ const ArticleList = () => {
             .catch(error => console.error('Error fetching articles:', error));
     }, []);
 
+    const filteredArticles = selectedTopic
+        ? articles.filter(article => article.topic.includes(selectedTopic))
+        : articles;
+
     return (
         <div className="article-container">
-            {articles.map(article => (
+            {filteredArticles.map(article => (
                 <div key={article.title} className="article-item">
                     <h3 className="article-title">{article.title}</h3>
                     <p className="article-summary">{article.summary}</p>

@@ -70,7 +70,7 @@ function Contact() {
 
   return (
     <div className="bodyclass">
-      <h1>{title}</h1>
+      <h1 id="kalletitle">{title}</h1>
       <div className="formclass">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
