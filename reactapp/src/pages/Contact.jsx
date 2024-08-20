@@ -8,6 +8,47 @@ function Contact() {
   const [title, setTitle] = useState('Contact Form');
   const [language, setLanguage] = useState('en');
 
+  const translations = {
+    en: {
+      nameLabel: "Name:",
+      emailLabel: "Email:",
+      messageLabel: "Message:",
+      submitText: "Submit"
+    },
+    es: {
+      nameLabel: "Nombre:",
+      emailLabel: "Correo electrónico:",
+      messageLabel: "Mensaje:",
+      submitText: "Enviar"
+    },
+    it: {
+      nameLabel: "Nome:",
+      emailLabel: "Email:",
+      messageLabel: "Messaggio:",
+      submitText: "Invia"
+    },
+    fr: {
+      nameLabel: "Nom:",
+      emailLabel: "Email:",
+      messageLabel: "Message:",
+      submitText: "Soumettre"
+    },
+    da: {
+      nameLabel: "Navn:",
+      emailLabel: "Email:",
+      messageLabel: "Besked:",
+      submitText: "Send"
+    },
+    sv: {
+      nameLabel: "Namn:",
+      emailLabel: "E-post:",
+      messageLabel: "Meddelande:",
+      submitText: "Skicka"
+    }
+  };
+
+  const labels = translations[language] || translations['en'];
+
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!name || !email || !message) {
@@ -25,7 +66,6 @@ function Contact() {
 
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
-    // Du kan hantera språkval här, kanske med en lokaliseringslösning eller liknande
   };
 
   return (
@@ -34,7 +74,7 @@ function Contact() {
       <div className="formclass">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name" id="nameLabel">Name:</label>
+            <label htmlFor="name" id="nameLabel">{labels.nameLabel}</label>
             <input
               type="text"
               id="name"
@@ -46,7 +86,7 @@ function Contact() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="email" id="emailLabel">Email:</label>
+            <label htmlFor="email" id="emailLabel">{labels.emailLabel}</label>
             <input
               type="email"
               id="email"
@@ -58,7 +98,7 @@ function Contact() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="message" id="messageLabel">Message:</label>
+            <label htmlFor="message" id="messageLabel">{labels.messageLabel}</label>
             <textarea
               id="message"
               name="message"
@@ -83,7 +123,7 @@ function Contact() {
               {/* Lägg till fler språk här om det behövs */}
             </select>
             
-            <input type="submit" value="Submit" />
+            <input type="submit" value={labels.submitText} />
           </div>
         </form>
       </div>
