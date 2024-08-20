@@ -68,9 +68,9 @@
   }
   
   .dropdown-menu {
+    margin-top: -1px;
+    position: absolute;
     display: none; 
-    top: 100%; 
-    left: 0; 
     background-color: white; 
     min-width: 160px; 
     padding: 8px 0; 
@@ -99,7 +99,6 @@
   }
   
   .dropdown:hover .dropdown-menu {
-    margin-top: 0px;
     display: block;
   }
   

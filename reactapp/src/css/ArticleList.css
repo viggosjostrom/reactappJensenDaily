@@ -1,45 +1,50 @@
-
-/* Artikelcontainer med bakgrundsfärg för dark mode */
 .dark-mode .article-container {
     background-color: rgb(30, 30, 30);
 }
 
-/* Resten av din CSS för artikelcontainer och artikel-item */
 .article-container {
-    background-color: white;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
     padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
+
 
 .article-item {
-    padding: 20px;
-    border-radius: 10px; 
+    display: flex;
+    flex-direction: column; 
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    background-color: white;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+    padding: 20px;
 }
 
-.article-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-}
 
-/* Resten av din CSS för artikeltitel, sammanfattning och länk */
 .article-title {
-    font-size: 1.5rem;
-    color: #434343;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #333;
+    margin: 0 0 15px;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
 }
 
+
 .article-summary {
     font-size: 1rem;
-    color: #7f7f7f;
-    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
+    flex-grow: 1;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .article-link {
@@ -55,21 +60,7 @@
     text-decoration: underline;
 }
 
-/* Gör rutnätet responsivt */
-@media (max-width: 1200px) {
-    .article-container {
-        grid-template-columns: repeat(3, 1fr); /* Tre kolumner för mellanstora skärmar */
-    }
-}
-
-@media (max-width: 900px) {
-    .article-container {
-        grid-template-columns: repeat(2, 1fr); /* Två kolumner för mindre skärmar */
-    }
-}
-
-@media (max-width: 600px) {
-    .article-container {
-        grid-template-columns: 1fr; /* En kolumn för mobila enheter */
-    }
+.article-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
