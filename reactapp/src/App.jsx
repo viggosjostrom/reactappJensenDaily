@@ -7,6 +7,7 @@ import TopicList from './TopicList';
 import Subscription from './pages/Subscription';
 import Contact from './pages/Contact';
 import Navbar from './pages/Navbar';
+import Footer from './pages/Footer'; // Kontrollera att filvägen är korrekt
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState('');
@@ -34,6 +35,7 @@ function App() {
           <Route path="/subscription" element={<Subscription />} />
         </Routes>
       </div>
+      <Footer /> {/* Lägg till footern här */}
     </Router>
   );
 }

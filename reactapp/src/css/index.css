@@ -107,14 +107,6 @@
     display: block;
   }
   
-  footer {
-    background-color: rgb(30, 30, 30);
-    color: #f5f4f4 !important;
-    text-align: center;
-    padding: 20px !important;
-    width: 100%;
-    position: relative;
-  }
   html,
 body {
   margin: 0;
