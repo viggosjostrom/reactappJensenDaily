@@ -2,58 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Jensens Daily</title>
-    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/site.css" />
-    <link rel="stylesheet" href="/JensensWebApp.styles.css" />
-    <link rel="stylesheet" href="src/css/site.cs" />
-    <link rel="stylesheet" href="src/css/articlelist.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+  <!-- Om du använder någon global CSS, länka den här -->
 </head>
 
 <body>
-    <header class="site-header">
-        <nav class="navbar">
-            <div class="header-container">
-                <div class="navbar-brand-wrapper">
-                    <a href="/" class="navbar-brand">The Jensens Daily</a>
-                    <div class="dropdown">
-                        <button class="dropdown-button">
-                            <span class="hamburger-icon"></span>
-                            <span class="hamburger-icon"></span>
-                            <span class="hamburger-icon"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item"><a href="/">Home</a></li>
-                            <li class="dropdown-item"><a href="/src/Contact/Contact.cshtml">Contact</a></li>
-                            <li class="dropdown-item"><a href="/Home/Subscription">Subscription</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <button id="dark-mode-button" class="btn btn-secondary">Dark Mode</button>
-            </div>
-        </nav>
-    </header>
-
-    <div class="body-container">
-        <main role="main" class="pb-3">
-            <!-- React will render here -->
-            <div id="root"></div>
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - JensensWebApp - <a href="/src/Contact/Contact.cshtml">Contact</a>
-        </div>
-    </footer>
-    <script src="/lib/jquery/dist/jquery.min.js"></script>
-    <script src="src/js/darkmode.js"></script>
-    <script src="src/js/changelanguage.js"></script>
-    <script src="/js/bundle.js"></script>
-    <script type="module" src="/src/main.jsx"></script>
-    <script src="/src/script.js"></script>
+  <div id="root"></div>
+  <!-- Vite script bundle -->
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

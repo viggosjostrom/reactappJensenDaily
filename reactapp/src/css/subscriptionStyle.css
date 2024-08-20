@@ -1,0 +1,145 @@
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #284dff, 0 0 40px #284dff, 0 0 50px #284dff, 0 0 60px #284dff, 0 0 70px #284dff;
+    }
+    50% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #284dff, 0 0 20px #284dff, 0 0 25px #284dff, 0 0 30px #284dff, 0 0 35px #284dff;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #284dff, 0 0 40px #284dff, 0 0 50px #284dff, 0 0 60px #284dff, 0 0 70px #284dff;
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    color: black; 
+    font-family: "Cursive", "Lucida Handwriting";
+    text-align: center;
+    animation: pulse 2s infinite ease-in-out;
+    padding-top: 70px;
+}
+
+:root {
+    --color-1: #f1b211;
+    --color-2: #e83611;
+    --color-3: #f98d00;
+    --color-4: #2a9a9f;
+    --color-5: #186cb8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1e1e1;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    line-height: 1;
+    display: inline;
+    min-height: calc(100vh - 16px);
+}
+
+
+
+p {
+    color: transparent;
+    text-shadow: 0px 0px 0px #7474748c; 
+    font-family: sans-serif;
+    font-size: 15vw;
+    font-weight: 900;
+    text-align: center;
+    width: max-content; 
+    margin: auto;
+    text-transform: uppercase;
+    background: linear-gradient(
+        220deg, var(--color-1) 19%,
+        transparent 19%, transparent 20%,
+        var(--color-2) 20%, var(--color-2) 39%,
+        transparent 39%, transparent 40%,
+        var(--color-3) 40%, var(--color-3) 59%,
+        transparent 59%, transparent 60%,
+        var(--color-4) 60%, var(--color-4) 79%,
+        transparent 79%, transparent 80%, 
+        var(--color-5) 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 3vw; 
+    }
+}
+
+.SubBox {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+    border: 5px solid black; 
+    height: auto;
+    color: #ffe4c4;
+   
+}
+
+.SubBox h3 {
+    font-family: 'Lucida Handwriting', 'Cursive', sans-serif;
+    font-size: 1.5em;
+    text-align: center; 
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.SubBox label {
+    margin-bottom: 5px;
+    color:peachpuff;
+}
+
+.SubBox input, .SubBox textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.SubBox textarea {
+    margin: 0 auto;
+    display: block;
+    width: calc(100% - 20px);
+    resize: vertical; 
+    margin-bottom: 10px;
+}
+
+.SubBox button {
+    border-radius: 15px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    
+}
+
+.SubBox button:hover {
+    background-color: gray;
+    color: green;
+}

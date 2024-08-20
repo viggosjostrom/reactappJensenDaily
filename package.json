@@ -1,0 +1,13 @@
+{
+  "name": "root-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run frontend\"",
+    "server": "cd webapi && node index.js",
+    "frontend": "cd reactapp && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
