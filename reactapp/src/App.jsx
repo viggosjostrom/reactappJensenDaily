@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
 import ArticleList from './ArticleList';
 import TopicList from './TopicList';
 import Subscription from './pages/Subscription';
@@ -19,6 +20,7 @@ function App() {
       <Navbar />
       <div className='container'>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route 
             path="/articles" 
             element={

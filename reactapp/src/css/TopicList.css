@@ -11,11 +11,11 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Gör att listan kan brytas till nästa rad vid behov */
+    flex-wrap: wrap; 
 }
 
 .topic-item {
-    margin: 0 10px; /* Mellanrum mellan topics */
+    margin: 0 10px; 
 }
 
 .topic-link {
@@ -26,7 +26,7 @@
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    transition: color 0.3s ease; /* Övergångseffekt vid hover */
+    transition: color 0.3s ease;
 }
 
 .topic-link:hover {

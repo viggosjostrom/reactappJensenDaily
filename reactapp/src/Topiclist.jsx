@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/TopicList.css'; // Importera CSS-filen
+import './css/TopicList.css'; 
 
 const TopicList = ({ onTopicSelect }) => {
     const [topics, setTopics] = React.useState([]);
@@ -18,7 +18,7 @@ const TopicList = ({ onTopicSelect }) => {
     }, []);
 
     const handleTopicClick = (topic) => {
-        onTopicSelect(topic); // Skicka det valda ämnet uppåt
+        onTopicSelect(topic); 
     };
 
     return (

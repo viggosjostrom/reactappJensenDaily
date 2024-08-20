@@ -4,16 +4,13 @@ import '../css/index.css';
 
 function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Läs från localStorage för att initiera state
     return localStorage.getItem('darkMode') === 'enabled';
   });
 
   useEffect(() => {
-    // Sätt dark mode baserat på state
     document.body.classList.toggle('dark-mode', isDarkMode);
-    // Spara inställningen i localStorage
     localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
-  }, [isDarkMode]); // Körs när isDarkMode ändras
+  }, [isDarkMode]); 
 
   const toggleDarkMode = () => {
     setIsDarkMode(prevMode => !prevMode);

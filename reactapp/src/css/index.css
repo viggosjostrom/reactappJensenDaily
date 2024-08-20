@@ -133,7 +133,7 @@ body {
 
   body.dark-mode {
     background-color: rgb(35,35,35);
-    background-image: none !important;/* Ta bort bakgrundsbilden */
+    background-image: none !important;
   }
   
 
@@ -226,20 +226,20 @@ body {
   margin-right: 20px;
   margin-top: -20px;
   top: -10px;
-  background-color: #000000; /* Svart bakgrundsfärg */
-  color: #ffffff; /* Vit textfärg */
-  border: 2px solid #ffffff; /* Vit kantlinje */
-  border-radius: 10px; /* Rundade hörn */
-  padding: 10px 20px; /* Inre marginal för att ge knappen storlek */
-  font-size: 16px; /* Textstorlek */
-  text-transform: uppercase; /* Versaler för en starkare visuell effekt */
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smidiga övergångar för färgändringar */
+  background-color: #000000; 
+  color: #ffffff; 
+  border: 2px solid #ffffff; 
+  border-radius: 10px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  text-transform: uppercase; 
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
 }
 
 #dark-mode-button:hover {
-  background-color: #333333; /* Mörkare svart vid hover */
-  color: #ffffff; /* Förbli vit textfärg vid hover */
-  border-color: #ffffff; /* Förbli vit kantlinje vid hover */
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .hidden-article {

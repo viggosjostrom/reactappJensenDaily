@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/contact.css'; // Anpassa vägen efter din filstruktur
+import '../css/contact.css'; 
 
 function Contact() {
   const [name, setName] = useState('');

@@ -8,10 +8,10 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 800px;
-    max-height: 500px; /* Justera efter behov */
-    overflow-y: auto; /* Lägg till scroll om innehållet är för stort */
-    margin: 0 auto; /* Centrerar formuläret horisontellt */
-    position: relative; /* För att kunna positionera dropdown-meny relativt formuläret */
+    max-height: 500px; 
+    overflow-y: auto; 
+    margin: 0 auto; 
+    position: relative; 
 }
 
 .formclass label {
@@ -55,7 +55,7 @@
     background-color: #45a049;
 }
 
-/* Stil för dropdown-menyn */
+
 @keyframes rainbow {
     0% { background-color: red; }
     14% { background-color: orange; }
@@ -76,7 +76,7 @@
     cursor: pointer;
     font-size: 16px;
     position: relative;
-    animation: rainbow 5s linear infinite; /* Applicera regnbågsanimationen */
+    animation: rainbow 5s linear infinite; 
 }
 
 #languageDropdown option {
@@ -84,7 +84,7 @@
     color: black;
 }
 
-/* Lägg till en wrapper runt submit-knappen och dropdown-menyn */
+
 .formclass .button-container {
     display: flex;
     justify-content: space-between;
@@ -93,11 +93,11 @@
 }
 
 .formclass .button-container #languageDropdown {
-    margin-right: auto; /* Flytta till vänster */
+    margin-right: auto; 
 }
 
 .formclass .button-container input[type="submit"] {
-    margin-left: auto; /* Flytta till höger */
+    margin-left: auto; 
 }
 #kalletitle {
     margin-top: -15px;

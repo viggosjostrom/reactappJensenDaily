@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/subscriptionStyle.css'; // Anpassa vägen efter din filstruktur
+import '../css/subscriptionStyle.css';
 
 function Subscription() {
   const [name, setName] = useState('');
@@ -13,7 +13,6 @@ function Subscription() {
       alert('Please fill in all the required fields.');
     } else {
       alert(`Thank you for subscribing, ${name}!`);
-      // Här kan du också hantera formulärdata, skicka till en server, etc.
     }
   };
 

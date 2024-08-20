@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './css/ArticleList.css'; // Importera CSS-filen
+import './css/ArticleList.css'; 
 
 const ArticleList = ({ selectedTopic }) => {
     const [articles, setArticles] = useState([]);
@@ -21,7 +21,7 @@ const ArticleList = ({ selectedTopic }) => {
                 <div key={article.title} className="article-item">
                     <h3 className="article-title">{article.title}</h3>
                     <p className="article-summary">{article.summary}</p>
-                    <a href={article.link} className="article-link">Read more</a>
+                    <a href={article.link} className="article-link" target="_blank">Read more</a>
                 </div>
             ))}
         </div>
