@@ -12,7 +12,7 @@ const TopicList = ({ onTopicSelect }) => {
                 data.forEach(article => {
                     article.topic.forEach(t => topicsSet.add(t));
                 });
-                setTopics(Array.from(topicsSet));
+                setTopics(['Alla Artiklar', ...Array.from(topicsSet)]);
             })
             .catch(error => console.error('Error fetching articles:', error));
     }, []);

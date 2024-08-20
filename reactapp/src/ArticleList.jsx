@@ -11,7 +11,7 @@ const ArticleList = ({ selectedTopic }) => {
             .catch(error => console.error('Error fetching articles:', error));
     }, []);
 
-    const filteredArticles = selectedTopic
+    const filteredArticles = selectedTopic && selectedTopic !== 'Alla Artiklar'
         ? articles.filter(article => article.topic.includes(selectedTopic))
         : articles;
 
