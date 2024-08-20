@@ -35,12 +35,18 @@
   }
   
   .navbar-brand {
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    font-family: 'Rozha One';
-    font-size: 30px;
     margin-right: 20px;
-    margin-top: -30px;
+    margin-top: -28px;
+    font-family: 'Rozha One', serif;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradientfärg för texten */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
   }
   
   .dropdown {
