@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../css/footer.css';
 
 function Footer() {
   return (
-    <footer>
-      <p id="footer-main">&copy; 2024 The Jensens Daily. All rights reserved.</p>
+    <footer id="footer-main">
+      <h4>&copy; 2024 The Jensens Daily. All rights reserved.</h4>
     </footer>
   );
 }

@@ -46,7 +46,7 @@ body {
 
 
 
-p {
+p .subscription {
     color: transparent;
     text-shadow: 0px 0px 0px #7474748c; 
     font-family: sans-serif;

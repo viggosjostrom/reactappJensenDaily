@@ -22,7 +22,7 @@ function Subscription() {
   };
 
   return (
-    <div>
+    <div class="subscription">
       <h1><strong>{title}</strong></h1>
       <div className="container">
         <p>Sign up now and get 50% off!</p>
