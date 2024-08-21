@@ -21,7 +21,7 @@ function Subscription() {
     setTitle(event.target.value ? `Welcome, ${event.target.value}!` : 'Super Deal!');
   };
 
-   (
+  return(
     <div>
       <h1 class="sub-title"><strong>{title}</strong></h1>
       <div className="container">
@@ -85,4 +85,3 @@ function Subscription() {
 }
 
 export default Subscription;
-return
