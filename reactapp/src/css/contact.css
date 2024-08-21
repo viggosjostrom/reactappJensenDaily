@@ -1,17 +1,17 @@
 .formclass form {
-    top: 0px;
-    padding-top: 100px;
+    top: -20px;
     display: flex;
     flex-direction: column;
     background: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 800px;
+    width: 600px;
     max-height: 500px; 
     overflow-y: auto; 
     margin: 0 auto; 
     position: relative; 
+    padding-bottom: 20px;
 }
 
 .formclass label {
@@ -100,6 +100,6 @@
     margin-left: auto; 
 }
 #kalletitle {
-    margin-top: -15px;
+    margin-top: -30px;
     margin-bottom: 50px;
 }
