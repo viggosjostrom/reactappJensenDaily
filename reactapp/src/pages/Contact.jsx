@@ -55,7 +55,6 @@ function Contact() {
       alert('Please fill in all the required fields.');
     } else {
       alert(`Thank you for contacting us, ${name}!`);
-      // Här kan du också hantera formulärdata, skicka till en server, etc.
     }
   };
 
@@ -120,7 +119,6 @@ function Contact() {
               <option value="fr">Français</option>
               <option value="da">Dansk</option>
               <option value="sv">Svenska</option>
-              {/* Lägg till fler språk här om det behövs */}
             </select>
             
             <input type="submit" value={labels.submitText} />
