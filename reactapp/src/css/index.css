@@ -41,7 +41,7 @@
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradientfärg för texten */
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);

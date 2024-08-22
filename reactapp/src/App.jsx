@@ -8,6 +8,9 @@ import Subscription from './pages/Subscription';
 import Contact from './pages/Contact';
 import Navbar from './pages/Navbar';
 import Footer from './pages/Footer'; 
+import Login from './pages/Login'; // Importera Login
+import Register from './pages/Register'; // Importera Register
+
 function App() {
   const [selectedTopic, setSelectedTopic] = useState('');
 
@@ -32,6 +35,8 @@ function App() {
           />
           <Route path="/contact" element={<Contact />} />  
           <Route path="/subscription" element={<Subscription />} />
+          <Route path="/login" element={<Login />} /> {/* Lägg till Login route */}
+          <Route path="/register" element={<Register />} /> {/* Lägg till Register route */}
         </Routes>
       </div>
       <Footer /> 

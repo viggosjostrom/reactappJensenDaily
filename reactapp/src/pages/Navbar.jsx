@@ -32,6 +32,8 @@ function Navbar() {
               <li className="dropdown-item"><Link to="/articles">Articles</Link></li>
               <li className="dropdown-item"><Link to="/contact">Contact</Link></li>
               <li className="dropdown-item"><Link to="/subscription">Subscription</Link></li>
+              <li className="dropdown-item"><Link to="/register">Register</Link></li>
+              <li className="dropdown-item"><Link to="/login">Login</Link></li>
             </ul>
           </div>
         </div>
