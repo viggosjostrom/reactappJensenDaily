@@ -1,3 +1,41 @@
+.left-links {
+  margin-top: -25px;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.left-links a {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Rozha One', serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #333333;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+  margin-left: 15px;
+}
+
+.left-links a:hover {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.left-links a:active {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+
 .site-header {
     background-color: rgb(30, 30, 30);
     position: fixed;
@@ -283,6 +321,8 @@ body {
     padding-right: 20px;
     max-width: calc(100% - 40px);
   }
+  
+  
 }
 
   

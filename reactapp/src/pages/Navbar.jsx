@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../css/index.css';
 
 function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -32,10 +31,12 @@ function Navbar() {
               <li className="dropdown-item"><Link to="/articles">Articles</Link></li>
               <li className="dropdown-item"><Link to="/contact">Contact</Link></li>
               <li className="dropdown-item"><Link to="/subscription">Subscription</Link></li>
-              <li className="dropdown-item"><Link to="/register">Register</Link></li>
-              <li className="dropdown-item"><Link to="/login">Login</Link></li>
             </ul>
           </div>
+        </div>
+        <div className="left-links">
+          <a href="/register">Register</a>
+          <a href="/login">Login</a>
         </div>
         <button 
           id="dark-mode-button" 
